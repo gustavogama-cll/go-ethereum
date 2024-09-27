@@ -31,3 +31,6 @@ ARG VERSION=""
 ARG BUILDNUM=""
 
 LABEL commit="$COMMIT" version="$VERSION" buildnum="$BUILDNUM"
+LABEL org.opencontainers.image.source=https://github.com/gustavogama-cll/go-ethereum
+LABEL org.opencontainers.image.description="Patched go-ethereum, resetting the --dev.period unit to milliseconds"
+LABEL org.opencontainers.image.licenses=LGPL-3,GPL-3.0
