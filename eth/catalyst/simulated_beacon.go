@@ -244,7 +244,7 @@ func (c *SimulatedBeacon) loop() {
 			if err := c.sealBlock(c.withdrawals.pop(10), uint64(time.Now().Unix())); err != nil {
 				log.Warn("Error performing sealing work", "err", err)
 			} else {
-				timer.Reset(time.Second * time.Duration(c.period))
+				timer.Reset(time.Millisecond * time.Duration(c.period))
 			}
 		}
 	}
